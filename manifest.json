@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "bouncing-windows",
+    "version": "1.0",
+    "browser_action": {
+        "default_title": "In class"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "*.jpg",
+        "mole.js"
+    ],
+    "permissions": [
+        "tabs",
+        "sessions",
+        "activeTab",
+        "storage",
+        "notifications",
+        "http://*/",
+        "https://*/",
+        "http://www.rosepestcontrol.com/filebin/images/pest_images/full/common_mole.jpg"
+    ]
+}
